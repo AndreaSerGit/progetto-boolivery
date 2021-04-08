@@ -1,0 +1,103 @@
+.wrapper {
+    padding-top: 50px;
+    padding-bottom: 40px;
+    .welcome {
+        background-color: $brandOrange;
+    }
+    h1 {
+        float: left;
+    }
+    .fail {
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+}
+
+.container_card {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .card {
+        position: relative;
+        min-height: 380px;
+        height: 380px;
+        min-width: 260px;
+        max-width: 260px;
+        border-radius: 20px;
+        box-shadow: 0 0 3px #ccc;
+        transition: 0.5s;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        &:hover {
+            transform: translateY(-1rem);
+            transition: 0.5s;
+        }
+        .name {
+            width: 170px;
+            height: 140px;
+        }
+        .blue {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            height: 180px;
+            border-bottom: 190px solid $brandBlue;
+            border-left: 70px solid transparent;border-bottom-right-radius: 20px;
+        }
+        .active {
+            position: absolute;
+            bottom: -180px;
+            right: 20px;
+            font-size: 30px;
+            color: $brandOrange;
+        }
+        a {
+            height: 50%;
+            .image-box {
+                width: 100%;
+                height: 100%;
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    border-top-left-radius: 20px;
+                    border-top-right-radius: 20px;
+                }
+            }
+        }
+        .info_card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 10px;
+            height: 50%;
+            .name {
+                overflow-y: scroll;
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+            }
+            .route {
+                display: flex;
+                font-size: 20px;
+                a {
+                    margin-right: 10px;
+                    i {
+                        color: $brandBlue;
+                    }
+                }
+                button {
+                    border: none;
+                    color: red;
+                    background-color: white;
+                }
+            }
+        }
+    }
+}
+  

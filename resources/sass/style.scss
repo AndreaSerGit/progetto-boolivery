@@ -1,0 +1,38 @@
+// Variables
+@import 'variables';
+// Commons
+@import '_commons';
+//  Mixins
+@import '_mixins';
+// vista guest
+@import 'partials/_header';
+
+@import 'partials/_main';
+
+@import 'partials/_footer';
+// VISTA HOMEPAGE
+@import 'guests/main.scss';
+// VISTA CHECKOUT
+@import 'guests/checkout.scss';
+// VISTA CHECKOUT-CONFIRMED
+@import 'guests/checkoutconfirm.scss';
+// VISTA RISTORANTE GUEST
+@import 'guests/show.scss';
+// VISTA ADMIN EDIT/CREATE
+@import 'admin/plate/create-edit.scss';
+// VISTA HOME ADMIN
+@import 'admin/restaurant/index.scss';
+// VISTA SHOW ADMIN
+@import 'admin/restaurant/show.scss';
+// VISTA LOGIN
+@import 'admin/login.scss';
+
+
+
+
+
+
+
+
+
+

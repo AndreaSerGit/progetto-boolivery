@@ -1,0 +1,27 @@
+body {
+    overflow-x: hidden;
+    .central {
+        min-height: 80vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .message {
+            display: flex;
+           flex-direction: column;
+            width: 60%;
+            height: 30%;
+            border-radius: 20px;
+            text-align: center;
+        }
+    }
+    #rider {
+        width: 150px;
+        transition: transform 5s 1s cubic-bezier(.66,0,0,1.29);
+        margin-bottom: 60px;
+      }
+      .go{
+        transform: translateX(1700px);
+      }
+}

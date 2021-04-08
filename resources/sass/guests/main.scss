@@ -1,0 +1,964 @@
+ // transition al caricamento
+ .fade-enter-active,
+ .fade-leave-active {
+ transition: opacity 4s
+ }
+ .fade-enter,
+ .fade-leave-to {
+     opacity: 0
+ }
+
+#fortunato_loading {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $brandBlue;
+
+    h1 {
+        margin-top: 100px;
+        color: $brandOrange;
+        align-self: flex-start;
+        animation: pulsate 3s ease-out;
+        animation-iteration-count: infinite;
+        opacity: 0.2;
+        @keyframes pulsate {
+            0% {
+                opacity: 0.2;
+            }
+            50% {
+                opacity: 1.0;
+            }
+            100% {
+                opacity: 0.2;
+            }
+        }
+    }
+
+
+    .dot-floating {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        background-color: $brandOrange;
+        color: $brandOrange;
+        animation: dotFloating 3s infinite cubic-bezier(0.15, 0.6, 0.9, 0.1);
+      }
+
+      .dot-floating::before, .dot-floating::after {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        top: 0;
+      }
+
+      .dot-floating::before {
+        left: -30px;
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        background-color: $brandOrange;
+        color: $brandOrange;
+        animation: dotFloatingBefore 3s infinite ease-in-out;
+      }
+
+      .dot-floating::after {
+        left: -60px;
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        background-color: $brandOrange;
+        color: $brandOrange;
+        animation: dotFloatingAfter 3s infinite cubic-bezier(0.4, 0, 1, 1);
+      }
+
+      @keyframes dotFloating {
+        0% {
+          left: calc(-50% - 5px);
+        }
+        75% {
+          left: calc(50% + 105px);
+        }
+        100% {
+          left: calc(50% + 105px);
+        }
+      }
+
+      @keyframes dotFloatingBefore {
+        0% {
+          left: -50px;
+        }
+        50% {
+          left: -30px;
+        }
+        75% {
+          left: -50px;
+        }
+        100% {
+          left: -50px;
+        }
+      }
+
+      @keyframes dotFloatingAfter {
+        0% {
+          left: -100px;
+        }
+        50% {
+          left: -60px;
+        }
+        75% {
+          left: -100px;
+        }
+        100% {
+          left: -100px;
+        }
+      }
+
+}
+
+#fortunato {
+    
+    .jumbo_box {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        overflow: hidden;
+        background-color: $brandOrange;
+        background-image: url(https://freesvg.org/img/FoodAndDrinkDesign.png);
+
+        
+
+
+        .search_bar {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            margin-top: 5%;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+
+            .wrap_card {
+                height: 100%;
+                width: 55%;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                align-items: center;
+
+                .button_category {
+                    display: flex;
+                    justify-content: center;
+                    position: relative;
+                    flex-direction: column;
+                    align-items: center;
+                    border: none;
+                    height: 100px;
+                    width: 100px;
+                    background-color: $body-bg;
+                    border-radius: 100%;
+                    border: 3px dashed $brandBlue;
+                    margin: 2px;
+
+                    &:hover {
+                        border: 3px solid $brandBlue;
+                    }
+
+                    img {
+                        width: 50%;
+
+                    }
+
+                    h6 {
+                        margin-top: 2px;
+                        font-size: 13px;
+                    }
+
+                    .fa-medal {
+                        position:absolute;
+                        top: 13px;
+                        left: 8px;
+                    }
+
+
+
+                    
+                }
+
+            }
+
+        }
+
+        .wave_one {
+            width: 100%;
+        }
+
+
+    }
+
+    main {
+        background-color: $superWhite;
+
+        .container {
+            margin-top: 20px;
+            min-height: 400px;
+
+            .not_found {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .jumbo_title {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            a {
+                
+
+                &hover {
+                    cursor: pointer;
+                    text-decoration: none;
+                }
+            }
+            
+            .fade-enter-active,
+            .fade-leave {
+            transition: opacity 0.7s
+            }
+            .fade-enter-to,
+            .fade-leave-to {
+                opacity: 0
+            }
+
+            section {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    height: 100%;
+                    margin-bottom: 40px;
+                    transition: 0.6s;
+
+                    
+
+
+                    .wrap_card {
+                        height: 100%;
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        margin-bottom: 40px;
+        
+                        .button_category {
+                            display: flex;
+                            justify-content: center;
+                            position: relative;
+                            flex-direction: column;
+                            align-items: center;
+                            border: none;
+                            height: 100px;
+                            width: 100px;
+                            background-color: white;
+                            border-radius: 100%;
+                            margin: 2px;
+        
+                            img {
+                                width: 50%;
+        
+                            }
+        
+                            .fa-medal {
+                                position:absolute;
+                                top: 13px;
+                                left: 8px;
+                            }
+        
+        
+        
+                            
+                        }
+                            
+        
+                    }
+
+                   .wrapper_restaurant {
+                       width: 100%;
+                       display: flex;
+                       justify-content: center;
+                       align-items: center;
+                       flex-wrap: wrap;
+                       
+                    .card_restaurant {
+                        display: flex;
+                        flex-direction: column;
+                        margin: 0 15px;
+                        align-items: center;
+                        height: 240px;
+                        width: 300px;
+                        background-color: $body-bg;
+                        border-radius: 20px;
+                        transition: 0.2s;
+                        margin-top: 30px;
+                        &:hover {
+                           transform: translateY(-1rem);
+                            transition: 0.2s;
+                        }
+
+                        .slug {
+                            font-size: 20px;
+                            margin-top: 8px;
+                            max-height: 10%;
+                        }
+
+                        .image_box {
+                            height: 80%;
+                            width: 100%;
+                            position: relative;
+
+                            .fas.fa-medal {
+                                position: absolute;
+                                font-size: 30px;
+                                left: 10px;
+                                top: 10px;
+                                color: $brandOrange;
+                            }
+
+                            img {
+                                height: 100%;
+                                width: 100%;
+                                border-top-left-radius: 10px;
+                                border-top-right-radius: 10px;
+                           }
+                        }
+                    }
+
+                    .not_found {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        height: 100%;
+                        margin-top: 50px;
+
+                        img {
+                            height: 100px;
+                        }
+                    }
+                   }
+                    
+            }
+        }
+
+        .wave{
+            background: $superWhite;
+            height: 100%;
+            position: relative;
+
+            .break-wave {
+                height: 5px;
+                width: 100%;
+                background-color: #D64127;
+                position: absolute;
+                top: 49.6%;
+                overflow: hidden;
+                z-index: 5;
+            }
+
+          
+          }
+       
+
+        .recruting {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            background-color: $superWhite;
+            padding: 0 50px;
+            color: black;
+            font-size: 15px;
+            background-repeat:repeat-x;
+            background-size: cover;
+
+
+            h2 {
+                display: none;
+            }
+
+            .card_recruting {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: 50%;
+                width: 33%;
+                padding: 0 20px;
+                text-align: center;
+
+                h1 {
+                    margin-top: 20px;
+                }
+
+                h5 {
+                    font-size: 1.25rem;
+                }
+
+
+                .box {
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    width: 280px;
+                    height: 300px;
+                    background: $brandBlue;
+                    border: 15px solid $brandOrange;
+                    border-radius: 60% 40% 40% 20% / 70% 50% 30% 25%;
+                    margin: 0 50px;
+
+
+
+                    .inside-box {
+                        overflow: hidden;
+                        border-radius: 60% 40% 30% 20% / 70% 50% 40% 25%;
+                        img {
+                            position: absolute;
+                            object-fit: fill;
+                            top: 30px;
+                            left: 30px;
+                            width: 100%;
+                            border-radius: 60% 40% 30% 20% / 70% 50% 40% 25%;
+                        }
+
+                        h1 {
+                            font-size: 18px;
+                            white-space: nowrap;
+                            color: white;
+                            background-color: #111A51;
+                            padding: 10px 20px;
+                            border-radius: 20px 20px;
+                        }
+
+                        h1:hover {
+                            font-size: 20px;
+                        }
+
+
+                        .title {
+                            position: absolute;
+                            bottom: 0;
+                            left: 50%;
+                            transform: translate(-50%);
+                            color: white;
+                        }
+                    }
+            }
+            }
+
+        }
+
+
+    }
+
+
+    @media all and (max-width: 768px){
+        .jumbo_box {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+            overflow: hidden;
+            h1 {
+                font-size: 1.25rem;
+            }
+
+            h5 {
+                font-size: 0.75rem;
+            }
+
+            .search_bar {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                margin-top: 5%;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+
+                
+
+               .wrap_card {
+                   width: 100%;
+                   .button_category {
+                    display: flex;
+                    justify-content: center;
+                    position: relative;
+                    flex-direction: column;
+                    align-items: center;
+                    border: none;
+                    height: 80px;
+                    width: 80px;
+                    background-color: white;
+                    border-radius: 100%;
+                    border: 4px dashed $brandBlue;
+                    margin: 2px;
+
+                    img {
+                        width: 50%;
+
+                    }
+
+                    h6 {
+                        margin-top: 2px;
+                        font-size: 10px;
+                    }
+
+                    .fa-medal {
+                        position:absolute;
+                        top: 13px;
+                        left: 8px;
+                    }
+
+
+
+                    
+                }
+               }
+
+            }
+
+            .jumbo_title {
+                text-align: center;
+                margin-bottom: 100px;
+            }
+        }
+
+        main {
+            background-color: $superWhite;
+
+            .container {
+
+                section {
+                        display: flex;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        height: 100%;
+                        margin-bottom: 40px;
+                        text-align: center;
+                        .card_restaurant {
+                            display: flex;
+                            flex-direction: column;
+                            margin: 0 15px;
+                            align-items: center;
+                            height: 240px;
+                            width: 260px;
+                            background-color: $superWhite;
+                            border-radius: 10px;
+                            box-shadow: 0 0 3px #ccc;
+                            transition: 0.2s;
+                            margin-top: 30px;
+                            &:hover {
+                                margin-top: 5px;
+                                transition: 0.2s;
+                            }
+
+                            .slug {
+                                font-size: 20px;
+                                max-height: 10%;
+                            }
+
+                            .image_box {
+                                height: 80%;
+                                width: 100%;
+                                position: relative;
+
+                                .fas.fa-medal {
+                                    position: absolute;
+                                    font-size: 30px;
+                                    left: 10px;
+                                    top: 10px;
+                                    color: $brandOrange;
+                                }
+
+                                img {
+                                    height: 100%;
+                                    width: 100%;
+                                    border-top-left-radius: 10px;
+                                    border-top-right-radius: 10px;
+                               }
+                            }
+                        }
+
+                        .not_found {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: flex-start;
+                            height: 400px;
+
+                            img {
+                                height: 200px;
+                            }
+                        }
+                }
+            }
+
+
+
+            .recruting {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                width: 100%;
+                background-color: $superWhite;
+                padding: 0 40px  ;
+                color: black;
+                font-size: 15px;
+
+
+
+                .card_recruting {
+                    height: 50%;
+                    width: 70%;
+                    padding: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+
+                    h1 {
+                        margin-top: 30px;
+                        font-size: 1.25rem;
+                    }
+
+                    h5 {
+                        font-size: 0.75rem;
+                    }
+
+
+
+                    .box {
+                        position: relative;
+                        width: 200px;
+                        height: 220px;
+                        background: $brandBlue;
+                        border: 15px solid $brandOrange;
+                        border-radius: 60% 40% 40% 20% / 70% 50% 30% 25%;
+                        margin: 0 50px;
+
+
+
+                        .inside-box {
+                            overflow: hidden;
+                            border-radius: 60% 40% 30% 20% / 70% 50% 40% 25%;
+                            img {
+                                position: absolute;
+                                object-fit: fill;
+                                top: 30px;
+                                left: 30px;
+                                width: 100%;
+                                border-radius: 60% 40% 30% 20% / 70% 50% 40% 25%;
+                            }
+
+                            h1 {
+                                font-size: 18px;
+                                white-space: nowrap;
+                                color: white;
+                                background-color: #111A51;
+                                padding: 10px 20px;
+                                border-radius: 20px 20px;
+                            }
+
+                            h1:hover {
+                                font-size: 20px;
+                            }
+
+
+                            .title {
+                                position: absolute;
+                                bottom: 0;
+                                left: 50%;
+                                transform: translate(-50%);
+                                color: white;
+                            }
+                        }
+                }
+                }
+
+            }
+
+
+        }
+
+    }
+    @media screen and (min-width: 769px) and (max-width: 1139px){
+        .jumbo_box {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+            overflow: hidden;
+            background-color: $brandOrange;
+            background-image: url(https://freesvg.org/img/FoodAndDrinkDesign.png);
+    
+    
+            .search_bar {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                margin-top: 5%;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+    
+                .wrap_card {
+                    height: 100%;
+                    width: 51%;
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    align-items: center;
+
+    
+                }
+    
+                
+    
+                input {
+                    width: 50%;
+                    height: 60px;
+                    margin-bottom: 50px;
+                    padding: 15px;
+                    font-size: 26px;
+                    border-width: 5px;
+                    border-color: #ffffff;
+                    background-color: #ffffff;
+                    color: #000000;
+                    border-style: solid;
+                    border-radius: 50px;
+                    box-shadow: 0px 0px 30px rgba(237,69,34,.97);
+                    text-shadow: 0px 0px 5px rgba(255,255,255,.99);
+                    outline: none;
+                }
+    
+    
+    
+                ul {
+                    list-style: none;
+                    display: flex;
+    
+                    li {
+                        margin: 0 20px;
+                    }
+                }
+    
+            }
+    
+            .wave_one {
+                width: 100%;
+            }
+    
+    
+        }
+    
+        main {
+            background-color: $superWhite;
+    
+            .container {
+    
+                .jumbo_title {
+                    text-align: center;
+                    margin-bottom: 100px;
+                }
+    
+                section {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+    
+                        height: 100%;
+                        margin-bottom: 40px;
+    
+                       .wrapper_restaurant {
+                           width: 100%;
+                           display: flex;
+                           justify-content: center;
+                           align-items: center;
+                           flex-wrap: wrap;
+                           
+                        .card_restaurant {
+                            display: flex;
+                            flex-direction: column;
+                            margin: 0 15px;
+                            align-items: center;
+                            height: 240px;
+                            width: 260px;
+                            background-color: $body-bg;
+                            border-radius: 10px;
+                            box-shadow: 0 0 3px #ccc;
+                            transition: 0.2s;
+                            margin-top: 30px;
+                            &:hover {
+                               transform: translateY(-1rem);
+                                transition: 0.2s;
+                            }
+    
+                            .slug {
+                                font-size: 20px;
+                                max-height: 10%;
+                            }
+    
+                            .image_box {
+                                height: 80%;
+                                width: 100%;
+                                position: relative;
+    
+                                .fas.fa-medal {
+                                    position: absolute;
+                                    font-size: 30px;
+                                    left: 10px;
+                                    top: 10px;
+                                    color: $brandOrange;
+                                }
+    
+                                img {
+                                    height: 100%;
+                                    width: 100%;
+                                    border-top-left-radius: 10px;
+                                    border-top-right-radius: 10px;
+                               }
+                            }
+                        }
+    
+                        .not_found {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: flex-start;
+                            height: 400px;
+    
+                            img {
+                                height: 200px;
+                            }
+                        }
+                       }
+                        
+                }
+            }
+    
+            .wave{
+                background: $superWhite;
+                height: 100%;
+                position: relative;
+              }
+           
+    
+            .recruting {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                align-items: center;
+                height: 100%;
+                width: 100%;
+                background-color: $superWhite;
+                padding: 0 50px;
+                color: black;
+                font-size: 15px;
+    
+    
+                h2 {
+                    display: none;
+                }
+    
+                .card_recruting {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    height: 50%;
+                    width: 60%;
+                    margin: 20px;
+                    padding: 0 20px;
+                    text-align: center;
+    
+                    h1 {
+                        margin-top: 20px;
+                    }
+    
+                    h5 {
+                        font-size: 1.25rem;
+                    }
+    
+    
+                    .box {
+                        position: relative;
+                        display: flex;
+                        justify-content: center;
+                        width: 280px;
+                        height: 300px;
+                        background: $brandBlue;
+                        border: 15px solid $brandOrange;
+                        border-radius: 60% 40% 40% 20% / 70% 50% 30% 25%;
+                        margin: 0 50px;
+    
+    
+    
+                        .inside-box {
+                            overflow: hidden;
+                            border-radius: 60% 40% 30% 20% / 70% 50% 40% 25%;
+                            img {
+                                position: absolute;
+                                object-fit: fill;
+                                top: 30px;
+                                left: 30px;
+                                width: 100%;
+                                border-radius: 60% 40% 30% 20% / 70% 50% 40% 25%;
+                            }
+    
+                            h1 {
+                                font-size: 18px;
+                                white-space: nowrap;
+                                color: white;
+                                background-color: #111A51;
+                                padding: 10px 20px;
+                                border-radius: 20px 20px;
+                            }
+    
+                            h1:hover {
+                                font-size: 20px;
+                            }
+    
+    
+                            .title {
+                                position: absolute;
+                                bottom: 0;
+                                left: 50%;
+                                transform: translate(-50%);
+                                color: white;
+                            }
+                        }
+                }
+                }
+    
+            }
+    
+    
+        }
+
+    }
+    
+}

@@ -1,0 +1,1933 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Blinker", sans-serif;
+}
+
+body {
+  background-color: #F6D9D3;
+}
+
+a:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+ul a {
+  text-decoration: none;
+}
+
+.blue-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: white;
+  background-color: #131E52;
+  border: 2px solid #131E52;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+.blue-button i {
+  padding-left: 10px;
+}
+.blue-button:hover {
+  background-color: white;
+  border: 2px solid #131E52;
+  color: #131E52;
+}
+
+.blue-btn {
+  font-size: 20px;
+  color: white;
+  background-color: #131E52;
+  border: 2px solid #131E52;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+.blue-btn:hover {
+  background-color: white;
+  border: 2px solid #131E52;
+  color: #131E52;
+}
+
+.icon-blue {
+  color: #131E52;
+  font-size: 25px;
+}
+.icon-blue:hover {
+  color: #ED4521;
+}
+
+.error-form {
+  color: #131E52;
+  font-family: "Blinker", sans-serif;
+  font-size: 12px;
+}
+
+.error-wrapper {
+  margin-top: 80px;
+  padding: 20px 40px;
+  background: #ED4521;
+  border-radius: 8px;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+.error-wrapper h1 {
+  margin-bottom: 20px;
+}
+
+#navbarDropdown {
+  color: #FF6E00;
+}
+
+body {
+  margin-top: 90px;
+}
+
+.back-to-top {
+  background-color: #ED4521;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  display: none;
+  z-index: 9999;
+}
+.back-to-top:hover {
+  background-color: #f16d50;
+}
+
+#leonardo_header {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+#leonardo_header nav {
+  height: 90px;
+  background-color: #131E52;
+}
+#leonardo_header nav .nav-link {
+  color: white;
+}
+#leonardo_header nav .navbar-brand {
+  height: 90px;
+}
+#leonardo_header nav svg {
+  height: 100%;
+}
+#leonardo_header nav .dropdown-menu-right {
+  background-color: #131E52;
+}
+#leonardo_header nav .dropdown-menu-right a {
+  color: #F6D9D3;
+}
+#leonardo_header nav .dropdown-menu-right a:hover {
+  background-color: #ED4521;
+}
+#leonardo_header nav input {
+  position: absolute;
+  width: 25%;
+  height: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 20px;
+  border-color: white;
+  background-color: white;
+  color: #000000;
+  border-style: solid;
+  border-radius: 50px;
+  outline: none;
+}
+#leonardo_header .navbar-toggler {
+  background-color: #ED4521;
+}
+@media screen and (min-width: 769px) and (max-width: 1139px) {
+  #leonardo_header nav input {
+    width: 30%;
+    height: 40px;
+    text-align: center;
+    font-size: 14px;
+    margin-left: 10px;
+    border-color: white;
+    background-color: white;
+    color: #000000;
+    border-style: solid;
+    border-radius: 50px;
+    outline: none;
+  }
+  #leonardo_header nav svg {
+    height: calc(100% - 16px);
+  }
+  #leonardo_header nav .navbar-nav {
+    background-color: #131E52;
+    text-align: center;
+    border-radius: 10px;
+  }
+  #leonardo_header nav .navbar-light .navbar-nav .nav-link {
+    color: white !important;
+  }
+}
+@media (max-width: 768px) {
+  #leonardo_header nav input {
+    width: 40%;
+    height: 40px;
+    text-align: center;
+    font-size: 14px;
+    margin-left: 10px;
+    border-color: white;
+    background-color: white;
+    color: #000000;
+    border-style: solid;
+    border-radius: 50px;
+    outline: none;
+  }
+  #leonardo_header nav svg {
+    height: calc(100% - 16px);
+  }
+  #leonardo_header nav .navbar-nav {
+    background-color: #131E52;
+    text-align: center;
+    border-radius: 10px;
+  }
+  #leonardo_header nav .navbar-light .navbar-nav .nav-link {
+    color: white !important;
+  }
+}
+@media all and (max-width: 320px) {
+  #leonardo_header nav .navbar-brand svg {
+    height: calc(100% - 16px);
+  }
+}
+
+footer {
+  position: relative;
+  background-color: #131E52;
+}
+footer .wawe_one {
+  background-color: #F6D9D3;
+  width: 100%;
+}
+footer ul {
+  list-style: none;
+  text-align: center;
+}
+footer ul li {
+  padding: 10px;
+}
+footer ul li a {
+  color: #F3F4F5;
+}
+footer ul li i {
+  font-size: 22px;
+}
+footer h5 {
+  color: #ED4521;
+}
+footer p {
+  color: #F6D9D3;
+}
+footer #bottom_footer {
+  background: #182667;
+}
+
+@media all and (max-width: 768px) {
+  footer {
+    font-size: 22px;
+  }
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 4s;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+#fortunato_loading {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #131E52;
+}
+#fortunato_loading h1 {
+  margin-top: 100px;
+  color: #ED4521;
+  align-self: flex-start;
+  -webkit-animation: pulsate 3s ease-out;
+          animation: pulsate 3s ease-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  opacity: 0.2;
+}
+@-webkit-keyframes pulsate {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+@keyframes pulsate {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+#fortunato_loading .dot-floating {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  background-color: #ED4521;
+  color: #ED4521;
+  -webkit-animation: dotFloating 3s infinite cubic-bezier(0.15, 0.6, 0.9, 0.1);
+          animation: dotFloating 3s infinite cubic-bezier(0.15, 0.6, 0.9, 0.1);
+}
+#fortunato_loading .dot-floating::before, #fortunato_loading .dot-floating::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+}
+#fortunato_loading .dot-floating::before {
+  left: -30px;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  background-color: #ED4521;
+  color: #ED4521;
+  -webkit-animation: dotFloatingBefore 3s infinite ease-in-out;
+          animation: dotFloatingBefore 3s infinite ease-in-out;
+}
+#fortunato_loading .dot-floating::after {
+  left: -60px;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  background-color: #ED4521;
+  color: #ED4521;
+  -webkit-animation: dotFloatingAfter 3s infinite cubic-bezier(0.4, 0, 1, 1);
+          animation: dotFloatingAfter 3s infinite cubic-bezier(0.4, 0, 1, 1);
+}
+@-webkit-keyframes dotFloating {
+  0% {
+    left: calc(-50% - 5px);
+  }
+  75% {
+    left: calc(50% + 105px);
+  }
+  100% {
+    left: calc(50% + 105px);
+  }
+}
+@keyframes dotFloating {
+  0% {
+    left: calc(-50% - 5px);
+  }
+  75% {
+    left: calc(50% + 105px);
+  }
+  100% {
+    left: calc(50% + 105px);
+  }
+}
+@-webkit-keyframes dotFloatingBefore {
+  0% {
+    left: -50px;
+  }
+  50% {
+    left: -30px;
+  }
+  75% {
+    left: -50px;
+  }
+  100% {
+    left: -50px;
+  }
+}
+@keyframes dotFloatingBefore {
+  0% {
+    left: -50px;
+  }
+  50% {
+    left: -30px;
+  }
+  75% {
+    left: -50px;
+  }
+  100% {
+    left: -50px;
+  }
+}
+@-webkit-keyframes dotFloatingAfter {
+  0% {
+    left: -100px;
+  }
+  50% {
+    left: -60px;
+  }
+  75% {
+    left: -100px;
+  }
+  100% {
+    left: -100px;
+  }
+}
+@keyframes dotFloatingAfter {
+  0% {
+    left: -100px;
+  }
+  50% {
+    left: -60px;
+  }
+  75% {
+    left: -100px;
+  }
+  100% {
+    left: -100px;
+  }
+}
+
+#fortunato .jumbo_box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  overflow: hidden;
+  background-color: #ED4521;
+  background-image: url(https://freesvg.org/img/FoodAndDrinkDesign.png);
+}
+#fortunato .jumbo_box .search_bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 5%;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+#fortunato .jumbo_box .search_bar .wrap_card {
+  height: 100%;
+  width: 55%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+#fortunato .jumbo_box .search_bar .wrap_card .button_category {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+  height: 100px;
+  width: 100px;
+  background-color: #F3F4F5;
+  border-radius: 100%;
+  border: 3px dashed #131E52;
+  margin: 2px;
+}
+#fortunato .jumbo_box .search_bar .wrap_card .button_category:hover {
+  border: 3px solid #131E52;
+}
+#fortunato .jumbo_box .search_bar .wrap_card .button_category img {
+  width: 50%;
+}
+#fortunato .jumbo_box .search_bar .wrap_card .button_category h6 {
+  margin-top: 2px;
+  font-size: 13px;
+}
+#fortunato .jumbo_box .search_bar .wrap_card .button_category .fa-medal {
+  position: absolute;
+  top: 13px;
+  left: 8px;
+}
+#fortunato .jumbo_box .wave_one {
+  width: 100%;
+}
+#fortunato main {
+  background-color: #F6D9D3;
+}
+#fortunato main .container {
+  margin-top: 20px;
+  min-height: 400px;
+}
+#fortunato main .container .not_found {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#fortunato main .container .jumbo_title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+#fortunato main .container ahover {
+  cursor: pointer;
+  text-decoration: none;
+}
+#fortunato main .container .fade-enter-active,
+#fortunato main .container .fade-leave {
+  transition: opacity 0.7s;
+}
+#fortunato main .container .fade-enter-to,
+#fortunato main .container .fade-leave-to {
+  opacity: 0;
+}
+#fortunato main .container section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  margin-bottom: 40px;
+  transition: 0.6s;
+}
+#fortunato main .container section .wrap_card {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 40px;
+}
+#fortunato main .container section .wrap_card .button_category {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+  height: 100px;
+  width: 100px;
+  background-color: white;
+  border-radius: 100%;
+  margin: 2px;
+}
+#fortunato main .container section .wrap_card .button_category img {
+  width: 50%;
+}
+#fortunato main .container section .wrap_card .button_category .fa-medal {
+  position: absolute;
+  top: 13px;
+  left: 8px;
+}
+#fortunato main .container section .wrapper_restaurant {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#fortunato main .container section .wrapper_restaurant .card_restaurant {
+  display: flex;
+  flex-direction: column;
+  margin: 0 15px;
+  align-items: center;
+  height: 240px;
+  width: 300px;
+  background-color: #F3F4F5;
+  border-radius: 20px;
+  transition: 0.2s;
+  margin-top: 30px;
+}
+#fortunato main .container section .wrapper_restaurant .card_restaurant:hover {
+  transform: translateY(-1rem);
+  transition: 0.2s;
+}
+#fortunato main .container section .wrapper_restaurant .card_restaurant .slug {
+  font-size: 20px;
+  margin-top: 8px;
+  max-height: 10%;
+}
+#fortunato main .container section .wrapper_restaurant .card_restaurant .image_box {
+  height: 80%;
+  width: 100%;
+  position: relative;
+}
+#fortunato main .container section .wrapper_restaurant .card_restaurant .image_box .fas.fa-medal {
+  position: absolute;
+  font-size: 30px;
+  left: 10px;
+  top: 10px;
+  color: #ED4521;
+}
+#fortunato main .container section .wrapper_restaurant .card_restaurant .image_box img {
+  height: 100%;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+#fortunato main .container section .wrapper_restaurant .not_found {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+  margin-top: 50px;
+}
+#fortunato main .container section .wrapper_restaurant .not_found img {
+  height: 100px;
+}
+#fortunato main .wave {
+  background: #F6D9D3;
+  height: 100%;
+  position: relative;
+}
+#fortunato main .wave .break-wave {
+  height: 5px;
+  width: 100%;
+  background-color: #D64127;
+  position: absolute;
+  top: 49.6%;
+  overflow: hidden;
+  z-index: 5;
+}
+#fortunato main .recruting {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: #F6D9D3;
+  padding: 0 50px;
+  color: black;
+  font-size: 15px;
+  background-repeat: repeat-x;
+  background-size: cover;
+}
+#fortunato main .recruting h2 {
+  display: none;
+}
+#fortunato main .recruting .card_recruting {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50%;
+  width: 33%;
+  padding: 0 20px;
+  text-align: center;
+}
+#fortunato main .recruting .card_recruting h1 {
+  margin-top: 20px;
+}
+#fortunato main .recruting .card_recruting h5 {
+  font-size: 1.25rem;
+}
+#fortunato main .recruting .card_recruting .box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 280px;
+  height: 300px;
+  background: #131E52;
+  border: 15px solid #ED4521;
+  border-radius: 60% 40% 40% 20%/70% 50% 30% 25%;
+  margin: 0 50px;
+}
+#fortunato main .recruting .card_recruting .box .inside-box {
+  overflow: hidden;
+  border-radius: 60% 40% 30% 20%/70% 50% 40% 25%;
+}
+#fortunato main .recruting .card_recruting .box .inside-box img {
+  position: absolute;
+  -o-object-fit: fill;
+     object-fit: fill;
+  top: 30px;
+  left: 30px;
+  width: 100%;
+  border-radius: 60% 40% 30% 20%/70% 50% 40% 25%;
+}
+#fortunato main .recruting .card_recruting .box .inside-box h1 {
+  font-size: 18px;
+  white-space: nowrap;
+  color: white;
+  background-color: #111A51;
+  padding: 10px 20px;
+  border-radius: 20px 20px;
+}
+#fortunato main .recruting .card_recruting .box .inside-box h1:hover {
+  font-size: 20px;
+}
+#fortunato main .recruting .card_recruting .box .inside-box .title {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  color: white;
+}
+@media all and (max-width: 768px) {
+  #fortunato .jumbo_box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
+  }
+  #fortunato .jumbo_box h1 {
+    font-size: 1.25rem;
+  }
+  #fortunato .jumbo_box h5 {
+    font-size: 0.75rem;
+  }
+  #fortunato .jumbo_box .search_bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 5%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  #fortunato .jumbo_box .search_bar .wrap_card {
+    width: 100%;
+  }
+  #fortunato .jumbo_box .search_bar .wrap_card .button_category {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    height: 80px;
+    width: 80px;
+    background-color: white;
+    border-radius: 100%;
+    border: 4px dashed #131E52;
+    margin: 2px;
+  }
+  #fortunato .jumbo_box .search_bar .wrap_card .button_category img {
+    width: 50%;
+  }
+  #fortunato .jumbo_box .search_bar .wrap_card .button_category h6 {
+    margin-top: 2px;
+    font-size: 10px;
+  }
+  #fortunato .jumbo_box .search_bar .wrap_card .button_category .fa-medal {
+    position: absolute;
+    top: 13px;
+    left: 8px;
+  }
+  #fortunato .jumbo_box .jumbo_title {
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  #fortunato main {
+    background-color: #F6D9D3;
+  }
+  #fortunato main .container section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  #fortunato main .container section .card_restaurant {
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px;
+    align-items: center;
+    height: 240px;
+    width: 260px;
+    background-color: #F6D9D3;
+    border-radius: 10px;
+    box-shadow: 0 0 3px #ccc;
+    transition: 0.2s;
+    margin-top: 30px;
+  }
+  #fortunato main .container section .card_restaurant:hover {
+    margin-top: 5px;
+    transition: 0.2s;
+  }
+  #fortunato main .container section .card_restaurant .slug {
+    font-size: 20px;
+    max-height: 10%;
+  }
+  #fortunato main .container section .card_restaurant .image_box {
+    height: 80%;
+    width: 100%;
+    position: relative;
+  }
+  #fortunato main .container section .card_restaurant .image_box .fas.fa-medal {
+    position: absolute;
+    font-size: 30px;
+    left: 10px;
+    top: 10px;
+    color: #ED4521;
+  }
+  #fortunato main .container section .card_restaurant .image_box img {
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  #fortunato main .container section .not_found {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 400px;
+  }
+  #fortunato main .container section .not_found img {
+    height: 200px;
+  }
+  #fortunato main .recruting {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: #F6D9D3;
+    padding: 0 40px;
+    color: black;
+    font-size: 15px;
+  }
+  #fortunato main .recruting .card_recruting {
+    height: 50%;
+    width: 70%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  #fortunato main .recruting .card_recruting h1 {
+    margin-top: 30px;
+    font-size: 1.25rem;
+  }
+  #fortunato main .recruting .card_recruting h5 {
+    font-size: 0.75rem;
+  }
+  #fortunato main .recruting .card_recruting .box {
+    position: relative;
+    width: 200px;
+    height: 220px;
+    background: #131E52;
+    border: 15px solid #ED4521;
+    border-radius: 60% 40% 40% 20%/70% 50% 30% 25%;
+    margin: 0 50px;
+  }
+  #fortunato main .recruting .card_recruting .box .inside-box {
+    overflow: hidden;
+    border-radius: 60% 40% 30% 20%/70% 50% 40% 25%;
+  }
+  #fortunato main .recruting .card_recruting .box .inside-box img {
+    position: absolute;
+    -o-object-fit: fill;
+       object-fit: fill;
+    top: 30px;
+    left: 30px;
+    width: 100%;
+    border-radius: 60% 40% 30% 20%/70% 50% 40% 25%;
+  }
+  #fortunato main .recruting .card_recruting .box .inside-box h1 {
+    font-size: 18px;
+    white-space: nowrap;
+    color: white;
+    background-color: #111A51;
+    padding: 10px 20px;
+    border-radius: 20px 20px;
+  }
+  #fortunato main .recruting .card_recruting .box .inside-box h1:hover {
+    font-size: 20px;
+  }
+  #fortunato main .recruting .card_recruting .box .inside-box .title {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    color: white;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1139px) {
+  #fortunato .jumbo_box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
+    background-color: #ED4521;
+    background-image: url(https://freesvg.org/img/FoodAndDrinkDesign.png);
+  }
+  #fortunato .jumbo_box .search_bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 5%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  #fortunato .jumbo_box .search_bar .wrap_card {
+    height: 100%;
+    width: 51%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  #fortunato .jumbo_box .search_bar input {
+    width: 50%;
+    height: 60px;
+    margin-bottom: 50px;
+    padding: 15px;
+    font-size: 26px;
+    border-width: 5px;
+    border-color: #ffffff;
+    background-color: #ffffff;
+    color: #000000;
+    border-style: solid;
+    border-radius: 50px;
+    box-shadow: 0px 0px 30px rgba(237, 69, 34, 0.97);
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.99);
+    outline: none;
+  }
+  #fortunato .jumbo_box .search_bar ul {
+    list-style: none;
+    display: flex;
+  }
+  #fortunato .jumbo_box .search_bar ul li {
+    margin: 0 20px;
+  }
+  #fortunato .jumbo_box .wave_one {
+    width: 100%;
+  }
+  #fortunato main {
+    background-color: #F6D9D3;
+  }
+  #fortunato main .container .jumbo_title {
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  #fortunato main .container section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    margin-bottom: 40px;
+  }
+  #fortunato main .container section .wrapper_restaurant {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  #fortunato main .container section .wrapper_restaurant .card_restaurant {
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px;
+    align-items: center;
+    height: 240px;
+    width: 260px;
+    background-color: #F3F4F5;
+    border-radius: 10px;
+    box-shadow: 0 0 3px #ccc;
+    transition: 0.2s;
+    margin-top: 30px;
+  }
+  #fortunato main .container section .wrapper_restaurant .card_restaurant:hover {
+    transform: translateY(-1rem);
+    transition: 0.2s;
+  }
+  #fortunato main .container section .wrapper_restaurant .card_restaurant .slug {
+    font-size: 20px;
+    max-height: 10%;
+  }
+  #fortunato main .container section .wrapper_restaurant .card_restaurant .image_box {
+    height: 80%;
+    width: 100%;
+    position: relative;
+  }
+  #fortunato main .container section .wrapper_restaurant .card_restaurant .image_box .fas.fa-medal {
+    position: absolute;
+    font-size: 30px;
+    left: 10px;
+    top: 10px;
+    color: #ED4521;
+  }
+  #fortunato main .container section .wrapper_restaurant .card_restaurant .image_box img {
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  #fortunato main .container section .wrapper_restaurant .not_found {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 400px;
+  }
+  #fortunato main .container section .wrapper_restaurant .not_found img {
+    height: 200px;
+  }
+  #fortunato main .wave {
+    background: #F6D9D3;
+    height: 100%;
+    position: relative;
+  }
+  #fortunato main .recruting {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: #F6D9D3;
+    padding: 0 50px;
+    color: black;
+    font-size: 15px;
+  }
+  #fortunato main .recruting h2 {
+    display: none;
+  }
+  #fortunato main .recruting .card_recruting {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50%;
+    width: 60%;
+    margin: 20px;
+    padding: 0 20px;
+    text-align: center;
+  }
+  #fortunato main .recruting .card_recruting h1 {
+    margin-top: 20px;
+  }
+  #fortunato main .recruting .card_recruting h5 {
+    font-size: 1.25rem;
+  }
+  #fortunato main .recruting .card_recruting .box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 280px;
+    height: 300px;
+    background: #131E52;
+    border: 15px solid #ED4521;
+    border-radius: 60% 40% 40% 20%/70% 50% 30% 25%;
+    margin: 0 50px;
+  }
+  #fortunato main .recruting .card_recruting .box .inside-box {
+    overflow: hidden;
+    border-radius: 60% 40% 30% 20%/70% 50% 40% 25%;
+  }
+  #fortunato main .recruting .card_recruting .box .inside-box img {
+    position: absolute;
+    -o-object-fit: fill;
+       object-fit: fill;
+    top: 30px;
+    left: 30px;
+    width: 100%;
+    border-radius: 60% 40% 30% 20%/70% 50% 40% 25%;
+  }
+  #fortunato main .recruting .card_recruting .box .inside-box h1 {
+    font-size: 18px;
+    white-space: nowrap;
+    color: white;
+    background-color: #111A51;
+    padding: 10px 20px;
+    border-radius: 20px 20px;
+  }
+  #fortunato main .recruting .card_recruting .box .inside-box h1:hover {
+    font-size: 20px;
+  }
+  #fortunato main .recruting .card_recruting .box .inside-box .title {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    color: white;
+  }
+}
+
+#emilio .fade-enter,
+#emilio .fade-leave-active {
+  transition: opacity 0.1s;
+}
+#emilio .fade-enter,
+#emilio .fade-leave-to {
+  opacity: 0;
+}
+#emilio .checkout {
+  width: 100%;
+  display: flex;
+  padding: 20px;
+  min-height: calc(100vh - 90px);
+}
+#emilio .checkout .checkout_left, #emilio .checkout .checkout_right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#emilio .checkout .checkout_left .checkout_braintree, #emilio .checkout .checkout_right .checkout_braintree {
+  width: 80%;
+  height: 80%;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: white;
+  overflow-y: auto;
+  background-image: url("/image/delivery_boy.jpeg");
+  background-position: top;
+}
+#emilio .checkout .checkout_left .cart_checkout, #emilio .checkout .checkout_right .cart_checkout {
+  width: 90%;
+  height: 90%;
+}
+#emilio .checkout .checkout_left .cart_checkout .cart, #emilio .checkout .checkout_right .cart_checkout .cart {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  background-color: white;
+  overflow-y: auto;
+}
+#emilio .checkout .checkout_left .cart_checkout .cart h2, #emilio .checkout .checkout_right .cart_checkout .cart h2 {
+  font-size: 35px;
+}
+#emilio .checkout .checkout_left .cart_checkout .cart i, #emilio .checkout .checkout_right .cart_checkout .cart i {
+  margin-bottom: 30px;
+  font-size: 40px;
+}
+#emilio .checkout .checkout_left .cart_checkout .cart .order_plate, #emilio .checkout .checkout_right .cart_checkout .cart .order_plate {
+  width: 100%;
+  text-align: left;
+}
+#emilio .checkout .checkout_left .cart_checkout .cart .order_plate ul, #emilio .checkout .checkout_right .cart_checkout .cart .order_plate ul {
+  display: flex;
+  justify-content: space-around;
+  line-height: 50px;
+  width: 100%;
+  height: 50px;
+  border-radius: 20px;
+  z-index: 1;
+}
+#emilio .checkout .checkout_left .cart_checkout .cart .order_plate .plateAddRemove #minus_checkout, #emilio .checkout .checkout_left .cart_checkout .cart .order_plate .plateAddRemove #plus_checkout, #emilio .checkout .checkout_right .cart_checkout .cart .order_plate .plateAddRemove #minus_checkout, #emilio .checkout .checkout_right .cart_checkout .cart .order_plate .plateAddRemove #plus_checkout {
+  font-size: 25px;
+}
+#emilio .checkout .checkout_left .cart_checkout .cart .order_plate .plateAddRemove:hover, #emilio .checkout .checkout_right .cart_checkout .cart .order_plate .plateAddRemove:hover {
+  cursor: pointer;
+}
+#emilio .checkout .checkout_left .cart_checkout .cart .order_plate .plateName, #emilio .checkout .checkout_right .cart_checkout .cart .order_plate .plateName {
+  font-size: 20px;
+  text-transform: capitalize;
+  width: 50%;
+}
+#emilio .checkout .checkout_left .cart_checkout .cart h4, #emilio .checkout .checkout_right .cart_checkout .cart h4 {
+  border-radius: 20px;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+#emilio input {
+  text-align: center;
+}
+#emilio .pay {
+  width: 100%;
+  margin-bottom: 40px;
+}
+#emilio .amount {
+  display: none;
+}
+@media all and (max-width: 1024px) {
+  #emilio .checkout {
+    flex-direction: column;
+  }
+  #emilio .checkout .checkout_left, #emilio .checkout .checkout_right {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  #emilio .checkout .checkout_right {
+    margin-top: 100px;
+  }
+  #emilio .pay {
+    margin-bottom: 100px;
+  }
+}
+@media all and (max-width: 768px) {
+  #emilio .checkout .checkout_left .cart_checkout, #emilio .checkout .checkout_right .cart_checkout {
+    width: 100%;
+  }
+}
+@media all and (max-width: 425px) {
+  #emilio .plateAddRemove #minus_checkout, #emilio .plateAddRemove #plus_checkout {
+    font-size: 20px !important;
+  }
+  #emilio .plateAddRemove:hover {
+    cursor: pointer;
+  }
+  #emilio .checkout_left ul {
+    line-height: 20px !important;
+    height: 100px !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center;
+  }
+  #emilio .checkout_left ul .plateName {
+    margin-top: 35px;
+    width: auto !important;
+  }
+}
+
+body {
+  overflow-x: hidden;
+}
+body .central {
+  min-height: 80vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .central .message {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 30%;
+  border-radius: 20px;
+  text-align: center;
+}
+body #rider {
+  width: 150px;
+  transition: transform 5s 1s cubic-bezier(0.66, 0, 0, 1.29);
+  margin-bottom: 60px;
+}
+body .go {
+  transform: translateX(1700px);
+}
+
+#emilio .container {
+  min-height: 500px;
+}
+#emilio .jumbo {
+  height: 50vh;
+  width: 100%;
+  position: relative;
+}
+#emilio .jumbo img {
+  width: 100%;
+  height: 50vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#emilio .restaurant {
+  width: 50%;
+  height: 35%;
+  bottom: -20%;
+  left: 10%;
+  margin-bottom: 20px;
+  position: absolute;
+}
+#emilio .restaurant h1 {
+  font-size: 5vw;
+}
+#emilio .restaurant i {
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+  font-size: 30px;
+  color: #D64129;
+}
+#emilio .main-menu {
+  margin-top: 80px;
+  position: relative;
+  width: 100%;
+}
+#emilio .main-menu .cart {
+  width: 30%;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: white;
+  float: right;
+  margin-right: 100px;
+  position: -webkit-sticky;
+  top: 10%;
+  position: sticky;
+  text-align: center;
+  z-index: 999;
+}
+#emilio .main-menu .cart h2 {
+  text-align: center;
+}
+#emilio .main-menu .cart i {
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+#emilio .main-menu .cart .order_plate {
+  width: 100%;
+  text-align: left;
+  border-radius: 20px;
+  padding: 15px;
+  margin-bottom: 5px;
+  height: 100px;
+}
+#emilio .main-menu .cart .order_plate li {
+  display: inline-block;
+}
+#emilio .main-menu .cart .order_plate .plateName {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+}
+#emilio .main-menu .cart .order_plate .plateCounter {
+  width: 60px;
+}
+#emilio .main-menu .cart .order_plate .platePrice {
+  float: right;
+}
+#emilio .main-menu .cart .order_plate .plateAddRemove {
+  width: 100%;
+  height: 20px;
+  text-align: center;
+}
+#emilio .main-menu .cart .order_plate .plateAddRemove #plus, #emilio .main-menu .cart .order_plate .plateAddRemove #minus {
+  cursor: pointer;
+  color: #D64129;
+}
+#emilio .main-menu .cart .order_plate .plateAddRemove #plus {
+  padding-right: 20px;
+}
+#emilio .main-menu .cart h4 {
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+#emilio .main-menu .cart .to_checkout i {
+  font-size: 50px;
+  color: black !important;
+}
+#emilio .main-menu .cart .delete {
+  margin-top: 50px;
+  cursor: pointer;
+  color: #D64129;
+}
+#emilio .main-menu .plate {
+  width: 50%;
+  height: 20%;
+  padding: 20px;
+  margin-left: 160px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  display: flex;
+  transition: transform 0.5s;
+  background-color: white;
+}
+#emilio .main-menu .plate:hover {
+  transform: scale(1.1);
+}
+#emilio .main-menu .plate .plate_photo {
+  width: 30%;
+  height: 100%;
+  border-radius: 5px;
+}
+#emilio .main-menu .plate .plate_photo img {
+  height: 100%;
+  border-radius: 5px;
+  margin-right: 10px;
+  width: 150px;
+}
+#emilio .main-menu .plate .plate_utility {
+  width: 100%;
+  height: 100%;
+}
+#emilio .main-menu .plate .plate_utility .plate_info {
+  width: 100%;
+  height: 50%;
+}
+#emilio .main-menu .plate .plate_utility .plate_info .plate_name {
+  float: left;
+  font-size: 30px;
+}
+#emilio .main-menu .plate .plate_utility .plate_info .plate_price {
+  float: right;
+}
+#emilio .main-menu .plate .plate_utility .plate_description {
+  width: 100%;
+  height: 50%;
+  padding: 5px;
+  overflow-y: auto;
+}
+#emilio .main-menu .plate .plate_counter {
+  width: 10%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  transition: transform 0.2s;
+}
+#emilio .main-menu .plate .plate_counter .plate_add, #emilio .main-menu .plate .plate_counter .plate_remove {
+  font-size: 30px;
+  color: #D64129;
+}
+#emilio .main-menu .plate .plate_counter .plate_remove:hover, #emilio .main-menu .plate .plate_counter .plate_add:hover {
+  cursor: pointer;
+  transform: scale(1.5);
+}
+#emilio #trigger_cart_mobile {
+  display: none;
+  position: relative;
+}
+#emilio #trigger_cart_mobile #total_cart {
+  font-size: 30px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  background-color: tomato;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  right: -5%;
+  top: -5%;
+}
+#emilio #desktopCartNoDesktop {
+  display: none;
+}
+#emilio #text_plate {
+  text-align: center;
+  font-size: 50px;
+  padding: 40px 35px;
+}
+#emilio .flip_card {
+  background-color: transparent;
+  perspective: 1000px;
+}
+#emilio .flip_card_inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  border-radius: 20px;
+}
+#emilio .flip_card:hover .flip_card_inner {
+  -webkit-transform: rotateX(180deg);
+}
+#emilio .flip_card_front, #emilio .flip_card_back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-perspective: 0;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  visibility: visible;
+  border-radius: 20px;
+}
+#emilio .flip_card_front {
+  z-index: 2;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.9;
+}
+#emilio .flip_card_back {
+  -webkit-transform: rotateY(180deg);
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  align-items: flex-end;
+}
+#emilio .flip_card_back .title_description {
+  width: 60%;
+  height: 100%;
+  padding: 20px;
+  overflow-y: auto;
+  transform: rotate(180deg);
+}
+#emilio .flip_card_back .photo_description {
+  width: 40%;
+  height: 100%;
+  transform: rotate(180deg);
+}
+#emilio .flip_card_back .photo_description img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#emilio .display_none {
+  display: none;
+}
+@media all and (max-width: 1400px) {
+  #emilio .plate {
+    margin-left: 20px !important;
+  }
+}
+@media all and (max-width: 1024px) and (min-width: 768px) {
+  #emilio .main-menu .plate {
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+  }
+  #emilio .main-menu .cart .order_plate .plateName {
+    width: 150px;
+  }
+}
+@media all and (max-width: 768px) {
+  #emilio #trigger_cart_mobile {
+    display: block;
+    font-size: 50px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: white;
+    margin-top: 40px !important;
+  }
+  #emilio .restaurant {
+    left: 0%;
+    width: 100%;
+    height: 200px;
+  }
+  #emilio .restaurant h1 {
+    font-size: 55px;
+  }
+  #emilio .main-menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #emilio .main-menu .cart {
+    width: 100%;
+    margin-right: 0px;
+    position: relative;
+  }
+  #emilio .main-menu .cart .plateAddRemove {
+    width: 100%;
+    height: 20px;
+    text-align: center;
+  }
+  #emilio .main-menu .cart .plateAddRemove #plus {
+    font-size: 50px;
+  }
+  #emilio .main-menu .cart .plateAddRemove #minus {
+    font-size: 50px;
+  }
+  #emilio .main-menu .plate {
+    width: 100%;
+    height: 400px;
+    padding-left: 0px;
+    position: relative;
+  }
+  #emilio .main-menu .plate:hover {
+    transform: unset;
+  }
+  #emilio .main-menu .plate .plate_photo {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    z-index: 10;
+  }
+  #emilio .main-menu .plate .plate_photo img {
+    width: 100%;
+    height: 50%;
+    border-radius: 20px;
+  }
+  #emilio .main-menu .plate .plate_photo:active {
+    display: none;
+  }
+  #emilio .main-menu .plate .plate_utility {
+    width: 100%;
+    height: 46%;
+    position: absolute;
+    left: 0%;
+    top: 61%;
+    text-align: center;
+    z-index: 2;
+    padding: 20px;
+  }
+  #emilio .main-menu .plate .plate_utility .plate_name {
+    font-size: 20px !important;
+  }
+  #emilio .main-menu .plate .plate_utility .plate_info {
+    height: 28% !important;
+  }
+  #emilio .main-menu .plate .plate_description {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    z-index: 2;
+  }
+  #emilio .main-menu .plate .plate_counter {
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -40%);
+    z-index: 99;
+    flex-direction: row;
+    align-items: center;
+    font-size: 50px;
+  }
+  #emilio .main-menu .plate .plate_counter .plate_add, #emilio .main-menu .plate .plate_counter .plate_remove {
+    font-size: 40px;
+    margin-top: 109px;
+  }
+  #emilio .main-menu .plate .plate_counter .plate_remove:hover, #emilio .main-menu .plate .plate_counter .plate_add:hover {
+    cursor: pointer;
+    font-size: 50px;
+  }
+  #emilio #text_plate {
+    text-align: center;
+  }
+  #emilio #mobileCartNoMobile {
+    display: none;
+  }
+}
+@media all and (max-width: 425px) {
+  #emilio .plate {
+    margin-left: 0px !important;
+  }
+}
+
+.login-form {
+  margin-top: 30px;
+  padding: 60px 40px 10px 40px;
+  background: #ED4521;
+  border-radius: 8px;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+  position: relative;
+  font-size: 20px;
+}
+.login-form .form-group img {
+  margin: 20px;
+}
+
+.wrapper {
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+.wrapper .welcome {
+  background-color: #ED4521;
+}
+.wrapper h1 {
+  float: left;
+}
+.wrapper .fail {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container_card {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.container_card .card {
+  position: relative;
+  min-height: 380px;
+  height: 380px;
+  min-width: 260px;
+  max-width: 260px;
+  border-radius: 20px;
+  box-shadow: 0 0 3px #ccc;
+  transition: 0.5s;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.container_card .card:hover {
+  transform: translateY(-1rem);
+  transition: 0.5s;
+}
+.container_card .card .name {
+  width: 170px;
+  height: 140px;
+}
+.container_card .card .blue {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 180px;
+  border-bottom: 190px solid #131E52;
+  border-left: 70px solid transparent;
+  border-bottom-right-radius: 20px;
+}
+.container_card .card .active {
+  position: absolute;
+  bottom: -180px;
+  right: 20px;
+  font-size: 30px;
+  color: #ED4521;
+}
+.container_card .card a {
+  height: 50%;
+}
+.container_card .card a .image-box {
+  width: 100%;
+  height: 100%;
+}
+.container_card .card a .image-box img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.container_card .card .info_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px;
+  height: 50%;
+}
+.container_card .card .info_card .name {
+  overflow-y: scroll;
+}
+.container_card .card .info_card .name::-webkit-scrollbar {
+  display: none;
+}
+.container_card .card .info_card .route {
+  display: flex;
+  font-size: 20px;
+}
+.container_card .card .info_card .route a {
+  margin-right: 10px;
+}
+.container_card .card .info_card .route a i {
+  color: #131E52;
+}
+.container_card .card .info_card .route button {
+  border: none;
+  color: red;
+  background-color: white;
+}
+
+.curved-top {
+  background-color: trasparent;
+  position: relative;
+  height: 300px;
+}
+.curved-top .img-layer {
+  display: block;
+}
+.curved-top .img-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.curved-top .img-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.5;
+}
+.curved-top .img-container .img-layover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+.curved-top .img-layer-bottom {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.curved-top .title-layer {
+  color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  font-size: 8vw;
+  border: 5px solid white;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.main-content {
+  padding: 40px 0;
+  position: relative;
+}
+.main-content .info-box__title {
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-content .info-box__title i {
+  padding-right: 5px;
+}
+.main-content .button-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-content .info-box .info {
+  background-color: white;
+  border-left: 4px solid #ED4521;
+  border-radius: 0px 40px 40px 0px;
+  padding: 10px;
+  margin-bottom: 5px;
+  transition: margin 1s ease-in-out;
+}
+.main-content .info-box .info:hover {
+  margin-left: 15px;
+  border-left: 4px solid #131E52;
+}
+.main-content .info-box .info i {
+  padding-right: 5px;
+}
+.main-content .info-box .info .tag {
+  background-color: #ED4521;
+  padding: 5px 10px;
+  color: white;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+.main-content .plates-box {
+  background-color: whitesmoke;
+  padding: 0 20px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  border-radius: 5px;
+}
+.main-content .plates-box .card {
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px 0;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+.main-content .plates-box .card .image-box {
+  height: 150px;
+}
+.main-content .plates-box .card .image-box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main-content .plates-box .card .card-content {
+  padding: 10px;
+}
+.main-content .plates-box .card .card-content .price {
+  font-size: 30px;
+}
+.main-content .plates-box .card .card-content h4 {
+  height: 50px;
+}
+.main-content .plates-box .card .card-content .desc {
+  height: 150px;
+  overflow-y: scroll;
+}
+.main-content .plates-box .card .card-content .desc::-webkit-scrollbar {
+  display: none;
+}
+.main-content .plates-box .card .card-content .card-bottom {
+  display: flex;
+  font-size: 20px;
+}
+.main-content .plates-box .card .card-content .card-bottom a {
+  margin-right: 10px;
+}
+.main-content .plates-box .card .card-content .card-bottom a i {
+  color: #131E52;
+}
+.main-content .plates-box .card .card-content .card-bottom button {
+  border: none;
+  color: red;
+  background-color: white;
+}
+
+@media all and (min-width: 768px) {
+  .curved-top {
+    height: 600px;
+  }
+
+  .main-content .plates-box {
+    max-height: 1000px;
+    overflow-y: hidden;
+    overflow-y: scroll;
+  }
+  .main-content .plates-box::-webkit-scrollbar {
+    display: none;
+  }
+}
+.wrap-box {
+  height: calc(100vh - 90px);
+}
+.wrap-box .login-form {
+  padding: 60px 40px 10px 40px;
+  background: #ED4521;
+  border-radius: 8px;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+  position: relative;
+}
+.wrap-box .login-form h3 {
+  position: absolute;
+  padding: 20px 40px;
+  left: 50%;
+  top: -30px;
+  transform: translateX(-50%);
+  color: #131E52;
+  text-align: center;
+  background-color: white;
+  border-radius: 79% 21% 80% 20%/26% 85% 15% 74%;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.wrap-box .btnForgetPwd {
+  color: #fff;
+  text-decoration: none;
+}
+.wrap-box .btnForgetPwd:hover {
+  text-decoration: none;
+  color: #fff;
+}
+.wrap-box .small-link {
+  color: #131E52;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.custom-form-error {
+  font-size: 18px;
+  color: white;
+}
